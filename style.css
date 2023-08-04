@@ -210,12 +210,19 @@ header nav .home-color {
   color: #36b3bd;
   margin-bottom: 60px;
 }
+#works .box {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
 #works .box .mediabox {
   display: flex;
   align-items: center;
   flex-direction: column;
 }
 #works .box .imgbox {
+  display: flex;
+  justify-content: center;
   width: 75%;
 }
 #works .box .textbox {
@@ -514,6 +521,13 @@ header nav .home-color {
   }
 }
 
+#support .box {
+  height: 100%;
+  background-color: #35b6c1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 #support .textbox {
   width: 100%;
 }
@@ -534,13 +548,22 @@ header nav .home-color {
   padding: 10px 30px;
   margin: 30px 0 0 40px;
 }
-#support .bgc {
-  background-color: #35b6c1;
-}
 #support .imgbox {
   width: 100%;
 }
 @media (max-width: 1000px) {
+  #support .col-md-6 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  #support .imgbox, #support .box {
+    width: 80%;
+  }
+  #support .box {
+    margin-top: 20px;
+    height: 400px;
+  }
   #support .textbox h1 {
     font-size: 40px;
   }
@@ -548,14 +571,8 @@ header nav .home-color {
     font-size: 16px;
   }
 }
-@media (max-width: 770px) {
-  #support .bgc {
-    margin-top: 30px;
-  }
-  #support .textbox h1 {
-    margin-top: 30px;
-  }
-  #support .textbox .btn {
-    margin-bottom: 30px;
+@media (max-width: 500px) {
+  #support .box .textbox h1 {
+    font-size: 30px;
   }
 }/*# sourceMappingURL=style.css.map */
